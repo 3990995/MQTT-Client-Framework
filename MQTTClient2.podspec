@@ -1,5 +1,5 @@
 Pod::Spec.new do |mqttc|
-	mqttc.name         = "MQTTClient"
+	mqttc.name         = "MQTTClient2"
 	mqttc.version      = "0.15.3"
 	mqttc.summary      = "iOS, macOS and tvOS native ObjectiveC MQTT Client Framework"
 	mqttc.homepage     = "https://github.com/novastone-media/MQTT-Client-Framework"
