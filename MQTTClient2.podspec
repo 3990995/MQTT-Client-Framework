@@ -81,14 +81,7 @@ Pod::Spec.new do |mqttc|
 		manager.dependency 'MQTTClient/Min'
 	end
 
-	mqttc.subspec 'ManagerL' do |managerl|
-		managerl.source_files =	"MQTTClient/MQTTClient/MQTTSessionManager.{h,m}", 
-					"MQTTClient/MQTTClient/ReconnectTimer.{h,m}", 
-					"MQTTClient/MQTTClient/ForegroundReconnection.{h,m}"
-		managerl.dependency 'MQTTClient/MinL'
-		managerl.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'LUMBERJACK=1' }
-	end
-
+	
 	mqttc.subspec 'Websocket' do |ws|
 		ws.source_files = "MQTTClient/MQTTClient/MQTTWebsocketTransport/*.{h,m}"
 		ws.dependency 'SocketRocket'
